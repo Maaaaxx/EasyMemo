@@ -1,0 +1,33 @@
+#topbar{
+    position: fixed;
+    width: 100%;
+    background: rgba(76, 181,170, 1);
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+}
+#topbar .wrapper{
+        width: 80%;
+        margin: 0 auto; 
+        padding: 0.5rem 0;
+        user-select: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+#topbar .logo{
+        font-size: 2rem;
+        color: white;
+        font-family: Tahoma;
+    }
+#topbar button{
+        padding: 0.3rem 1rem;
+        font-size: 1rem;
+        border: 1px solid white;
+        background: rgb(76, 181,170);
+        color: white;
+        cursor: pointer;
+    }
+#topbar .wrapper .welcome{
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}

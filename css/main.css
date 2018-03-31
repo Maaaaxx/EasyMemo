@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    background:url("https://imgchr.com/content/images/users/pesiD/bkg_1520916873.jpg") no-repeat;
+    background-size: cover;
+    min-width: 1024px;
+    position: relative;
+}
+#app #memoEditor{
+    position: fixed;
+    background: hsla(0, 0%,0%,0.25);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#app #editorWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#app #editorWrapper .wangEditor{
+    background: #f1f1f1;
+    width: 300px;
+    word-wrap: break-word;
+    }
+#app #editorWrapper .buttonWrapper{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+#app #editorWrapper button{
+    background: #f1f1f1;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 5px;
+    font-size: 18px;
+    width: 50%;
+}
