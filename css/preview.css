@@ -1,5 +1,4 @@
 #memoPreview{
-    background: rgba(255,255,255,0.8);
     padding: 5.5rem 0 2rem 0;
     width: 100%;
 }
@@ -14,9 +13,6 @@
     grid-row-gap: 2rem;
     
 }
-/* #memoPreview .memoList::-webkit-scrollbar{
-    display: none;
-} */
 #memoPreview .memoList li{
     height: 17rem;
     border: 1px solid #ccc;

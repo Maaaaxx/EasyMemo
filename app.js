@@ -27,7 +27,11 @@ var app = new Vue({
         showEditor:false,
         memoList:[
             {
-                content:'<p>欢迎使用<span style="color: rgb(70, 172, 200); font-size: large;">Easy Memo</span>😊</p><p>easy memo是基于vue.js的便签应用</p><p>数据管理使用<a href="https://leancloud.cn/" target="_blank">leancloud</a></p><p>您可以在这里创建、管理您的便签。</p>',
+                content:'<p>欢迎使用<span style="color: rgb(70, 172, 200); font-size: large;">Easy Memo !</span></p><p>easy memo是基于vue.js的便签应用</p><p>数据管理使用<a href="https://leancloud.cn/" target="_blank">leancloud</a></p><p>您可以在这里创建、管理您的便签。</p>',
+                createdAt:''
+            },
+            {
+                content:'<p>可以通过调节字体大小来区分<span style=\"font-size: x-large;\">标题</span>与内容&nbsp;&nbsp;<br></p><p>使用表情🙄让便签内容更加丰富</p><p>更改<span style=\"color: rgb(249, 150, 59);\">颜色</span>来标记某处文本</p><p>插入<a href=\"#\" target=\"_blank\">链接</a>来记录您感兴趣的网页</p><p>当然还可以添加图片&nbsp;<br></p><p><span style=\"font-style: italic;\"><img src=\"https://s1.ax1x.com/2018/04/02/CSpm7R.png\" style=\"max-width:100%;\"><br></span></p><p><span style=\"font-style: italic;\">祝您使用愉快！</span></p>',
                 createdAt:''
             },
             {
@@ -64,7 +68,6 @@ var app = new Vue({
                 query.find().then(
                     (memos)=>{
                         let avAllMemos = memos[0]
-                        
                         let id = avAllMemos.id
                         this.memoList = JSON.parse(avAllMemos.attributes.data)
                         this.memoList.id = id

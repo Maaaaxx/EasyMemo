@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
 }
+body{
+    
+    /* background:url("https://s1.ax1x.com/2018/03/31/9xT4u8.md.jpg"); */
+    background: #aaa;
+}
 #app{
-    background:url("https://s1.ax1x.com/2018/03/31/9xT4u8.md.jpg") no-repeat;
-    background-size: cover;
+    background: rgba(255,255,255,0.8);
+    min-height: 100vh;
     min-width: 1024px;
     position: relative;
 }
 #app #memoEditor{
     position: fixed;
-    background: hsla(0, 0%,0%,0.25);
     top: 0;
     left: 0;
     bottom: 0;

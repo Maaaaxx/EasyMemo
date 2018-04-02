@@ -30,10 +30,10 @@
             <div class="signUp dialog" v-if="actionType=='signUp'">
                 <form v-on:submit.prevent="signUp">
                     <div class="formRow input">
-                        用户名</br><input type="text" v-model="formData.username">
+                        用户名</br><input type="text" v-model="formData.username" required>
                     </div>
                     <div class="formRow input">
-                        密码</br><input type="password" v-model="formData.password">
+                        密码</br><input type="password" v-model="formData.password" required>
                     </div>
                     <div class="formActions">
                         <button class="button" type="button" @click="close">取消</button>
@@ -44,10 +44,10 @@
             <div class="login dialog" v-if="actionType=='login'">
                 <form v-on:submit.prevent="login">
                     <div class="formRow input">
-                        用户名</br><input type="text" v-model="formData.username">
+                        用户名</br><input type="text" v-model="formData.username" required>
                     </div>
                     <div class="formRow input">
-                        密码</br><input type="password" v-model="formData.password">
+                        密码</br><input type="password" v-model="formData.password" required>
                         </div>
                     <div class="formActions">
                         <button class="button" type="button" @click="close">取消</button>
@@ -60,7 +60,6 @@
                 <ol class="memoList">
                     <li v-for="memo in memoList">
                         <div class="toolbar">
-                            <!-- <button class="iconfont icon-menudown"></button> -->
                             <button title="置顶" @click="setTop(memo)" class="iconfont icon-top"></button>
                             <button title="修改" @click="modify(memo)" class="iconfont icon-editor"></button>
                             <button title="删除" @click="deleteMemo(memo)" class="iconfont icon-delete"></button>
@@ -69,7 +68,7 @@
                                 <span v-html="memo.content"></span>
                         </div>
                     </li>
-                <li class="addButton" @click="showEditor='true'">
+                <li title="新建便签" class="addButton" @click="showEditor='true'">
                     <div class="wrapper">
                     <span class="icon-zengjia iconfont"></span>
                     </div>
@@ -89,18 +88,5 @@
 
     </div>
     <script src="./dist/bundle.js"></script>
-    <script>
-        // function setHeight(){
-        //     let windowHeight = window.innerHeight
-        //     let windowWidth = window.innerWidth
-        //     document.getElementById('app').style.width=windowWidth+'px'
-        //     document.getElementById('app').style.height=windowHeight+'px'
-        //     console.log(windowWidth+'x'+windowHeight)
-        // }
-        // setHeight();
-        // window.onresize = function(){
-        //     setHeight();
-        // }
-    </script>
 </body>
 </html>
