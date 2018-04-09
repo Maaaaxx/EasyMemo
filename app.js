@@ -31,7 +31,7 @@ var app = new Vue({
                 createdAt:''
             },
             {
-                content:'<p>可以通过调节字体大小来区分<span style=\"font-size: x-large;\">标题</span>与内容&nbsp;&nbsp;<br></p><p>使用表情🙄让便签内容更加丰富</p><p>更改<span style=\"color: rgb(249, 150, 59);\">颜色</span>来标记某处文本</p><p>插入<a href=\"#\" target=\"_blank\">链接</a>来记录您感兴趣的网页</p><p>当然还可以添加图片&nbsp;<br></p><p><span style=\"font-style: italic;\"><img src=\"https://s1.ax1x.com/2018/04/02/CSpm7R.png\" style=\"max-width:100%;\"><br></span></p><p><span style=\"font-style: italic;\">祝您使用愉快！</span></p>',
+                content:'<p>可以通过调节字体大小来区分<span style=\"font-size: x-large;\">标题</span>与内容&nbsp;&nbsp;<br></p><p>使用表情🙄让便签内容更加丰富</p><p>更改<span style=\"color: rgb(249, 150, 59);\">颜色</span>来标记某处文本</p><p>插入<a href=\"#\" target=\"_blank\">链接</a>来记录您感兴趣的网页</p><p>当然还可以添加图片&nbsp;<br></p><p><span style=\"font-style: italic;\">祝您使用愉快！</span></p>',
                 createdAt:''
             },
         ],
